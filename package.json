@@ -1,0 +1,29 @@
+{
+  "name": "ggplot2",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "release": "npm version patch && npm publish",
+    "link-local": "npm link && npm link ggplot2",
+    "build": "npm run clean && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dereckmezquita/ggplot2.git"
+  },
+  "author": "Dereck Mezquita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dereckmezquita/ggplot2/issues"
+  },
+  "homepage": "https://github.com/dereckmezquita/ggplot2#readme",
+  "devDependencies": {
+    "tsconfig-paths": "^4.2.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.16",
+    "ts-node": "^10.9.2"
+  }
+}

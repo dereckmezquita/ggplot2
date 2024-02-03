@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            // npm install ts-node
+            // npm install --save-dev tsconfig-paths
+            "name": "Current TypeScript file (ts-node)",
+            "runtimeArgs": [ 
+                "-r",
+                "ts-node/register",
+                "-r",
+                "tsconfig-paths/register"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${file}",
+            // "outFiles": [
+            //     "${workspaceFolder}/dist/**/*.js"
+            // ]
+        }
+    ]
+}
